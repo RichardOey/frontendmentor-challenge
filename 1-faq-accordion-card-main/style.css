@@ -50,6 +50,7 @@ body {
   position: relative;
   top: -10px;
   left: -120px;
+
 }
 
 .image2 {
@@ -97,7 +98,6 @@ body {
   color: grey;
   display: none;
   overflow: hidden;
-
   font-family: "Kumbh Sans";
 }
 
@@ -111,4 +111,12 @@ body {
   color: hsl(228, 45%, 44%);
   font-family: "Kumbh Sans";
 
+}
+
+.title {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 10px 0px;
+    font-size: 30px;
+    color: hsl(238, 29%, 16%)
 }
