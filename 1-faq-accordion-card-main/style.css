@@ -1,6 +1,6 @@
 body {
   background-color: gainsboro;
-  font-family: Kumbh Sans;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
 .container {
@@ -46,17 +46,18 @@ body {
   left: 0;
 }
 
-.image1 {
-  position: relative;
+.illustration-woman{
+  position: absolute;
   top: -10px;
   left: -120px;
-
+  background-image: url(./images/illustration-woman-online-desktop.svg);
 }
 
-.image2 {
+.illustration-box {
   position: absolute;
-  top: 120px;
-  left: -130px;
+  background-position-y: 120px;
+  background-position-x: -130px;
+  background-image: url(./images/illustration-box-desktop.svg);
 }
 
 .accordion {
