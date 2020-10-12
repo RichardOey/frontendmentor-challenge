@@ -1,6 +1,7 @@
 body {
   background-color: gainsboro;
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
 }
 
 .container {
@@ -46,7 +47,7 @@ body {
   left: 0;
 }
 
-.illustration-woman{
+.illustration-woman {
   position: absolute;
   top: -10px;
   left: -120px;
@@ -63,7 +64,6 @@ body {
 .accordion {
   cursor: pointer;
   text-align: left;
-  border-bottom: 1px solid;
   padding: 18px 0px;
   width: 100%;
   text-align: left;
@@ -90,10 +90,13 @@ body {
 }
 .active {
   font-weight: bold;
-  color: hsl(238, 29%, 16%)
+  color: hsl(238, 29%, 16%);
 }
 
 .panel {
+  -webkit-transition: max-height 0.2s ease-in-out;
+  -moz-transition: max-height 0.2s ease-in-out;
+  -ms-transition: max-height 0.2s ease-in-out;
   transition: max-height 0.2s ease-out;
   background-color: white;
   color: grey;
@@ -102,22 +105,25 @@ body {
   font-family: "Kumbh Sans";
 }
 
+.section {
+  padding: 5px 0px;
+  border-bottom: 1px solid hsl(238, 29%, 16%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
   font-family: "Kumbh Sans";
-
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
   font-family: "Kumbh Sans";
-
 }
 
 .title {
-    font-family: sans-serif;
-    font-weight: bold;
-    margin: 10px 0px;
-    font-size: 30px;
-    color: hsl(238, 29%, 16%)
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 10px 0px;
+  font-size: 30px;
+  color: hsl(238, 29%, 16%);
 }

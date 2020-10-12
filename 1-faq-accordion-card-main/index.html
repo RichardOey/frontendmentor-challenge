@@ -26,42 +26,51 @@
                 </div>
               </div>
             </div>
-           
             <div class="column">
-              <div class ="title">
+              <div class="title">
                 FAQ
               </div>
-              <div class="accordion">
-                How many team members can I invite?
+              <div class="section">
+                <div class="accordion">
+                  How many team members can I invite?
+                </div>
+                <div class="panel">
+                  You can invite up to 2 additional users on the Free plan. There is no limit on
+                  team members for the Premium plan.
+                </div>
               </div>
-              <div class="panel">
-                You can invite up to 2 additional users on the Free plan. There is no limit on
-                team members for the Premium plan.  
+              <div class="section">
+                <div class="accordion">
+                  What is the maximum file upload size?
+                </div>
+                <div class="panel">
+                  No more than 2GB. All files in your account must fit your allotted storage space.
+                </div>
               </div>
-              <div class="accordion">
-                What is the maximum file upload size?
+              <div class="section">
+                <div class="accordion">
+                  How do I reset my password?
+                </div>
+                <div class="panel">
+                  Click “Forgot password” from the login page or “Change password” from your profile page.
+                  A reset link will be emailed to you.
+                </div>
               </div>
-              <div class="panel">
-                No more than 2GB. All files in your account must fit your allotted storage space.
+              <div class="section">
+                <div class="accordion">
+                  Can I cancel my subscription?
+                </div>
+                <div class="panel">
+                  Yes! Send us a message and we’ll process your request no questions asked.
+                </div>
               </div>
-              <div class="accordion">
-                How do I reset my password?
-              </div>
-              <div class="panel">
-                Click “Forgot password” from the login page or “Change password” from your profile page.
-                A reset link will be emailed to you.  
-              </div>
-              <div class="accordion">
-                Can I cancel my subscription?
-              </div>
-              <div class="panel">
-                Yes! Send us a message and we’ll process your request no questions asked.
-              </div>
-              <div class="accordion">
-                Do you provide additional support?
-              </div>
-              <div class="panel">
-                Chat and email support is available 24/7. Phone lines are open during normal business hours.
+              <div class="section">
+                <div class="accordion">
+                  Do you provide additional support?
+                </div>
+                <div class="panel">
+                  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                </div>
               </div>
             </div>
           </div>
@@ -77,20 +86,20 @@
 </body>
 <script>
   let acc = document.getElementsByClassName("accordion");
-  let i ;
-  
-  for (i = 0 ; i < acc.length; i++){
-    acc[i].addEventListener("click", function(){
-      
+  let i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+
       this.classList.toggle("active");
       let panel = this.nextElementSibling;
-      if (panel.style.display === "block"){
+      if (panel.style.display === "block") {
         panel.style.display = "none";
       } else {
         panel.style.display = "block";
       }
     });
   }
-  </script>
+</script>
 
 </html>
