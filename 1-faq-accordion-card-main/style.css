@@ -1,7 +1,7 @@
 body {
   background-color: gainsboro;
   font-family: "Kumbh Sans", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .container {
@@ -76,7 +76,7 @@ body {
       hsl(240, 73%, 65%)
     );
     font-family: "Kumbh Sans", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
   }
   
   .card {
