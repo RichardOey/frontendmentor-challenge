@@ -172,11 +172,11 @@ body {
 }
 
 .section-item-active {
-  height: 7em;
+  height: 9em;
 }
 
 .panel {
-  font-size: 12px;
+  font-size: 14px;
   color: hsl(240, 8%, 70%);
   margin: 1em 0;
 }
