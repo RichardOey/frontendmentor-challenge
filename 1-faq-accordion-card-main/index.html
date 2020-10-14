@@ -40,7 +40,7 @@
                 <div class="accordion">
                   How many team members can I invite?
                 </div>
-                <div class="panel-hidden">
+                <div class="panel">
                   You can invite up to 2 additional users on the Free plan. There is no limit on
                   team members for the Premium plan.
                   <hr class="divider">
@@ -50,7 +50,7 @@
                 <div class="accordion">
                   What is the maximum file upload size?
                 </div>
-                <div class="panel-hidden">
+                <div class="panel">
                   No more than 2GB. All files in your account must fit your allotted storage space.
                   <hr class="divider">
                 </div>
@@ -59,7 +59,7 @@
                 <div class="accordion">
                   How do I reset my password?
                 </div>
-                <div class="panel-hidden">
+                <div class="panel">
                   Click “Forgot password” from the login page or “Change password” from your profile page.
                   A reset link will be emailed to you.
                   <hr class="divider">
@@ -69,7 +69,7 @@
                 <div class="accordion">
                   Can I cancel my subscription?
                 </div>
-                <div class="panel-hidden">
+                <div class="panel">
                   Yes! Send us a message and we’ll process your request no questions asked.
                   <hr class="divider">
                 </div>
@@ -78,7 +78,7 @@
                 <div class="accordion">
                   Do you provide additional support?
                 </div>
-                <div class="panel-hidden">
+                <div class="panel">
                   Chat and email support is available 24/7. Phone lines are open during normal business hours.
                   <hr class="divider">
                 </div>
@@ -96,22 +96,26 @@
   </div>
 </body>
 <script>
-  let acc = document.getElementsByClassName("accordion");
-  let i;
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
+  const section = document.querySelectorAll('.section');
 
-      this.classList.toggle("active");
-      let panel = this.nextElementSibling;
-      if (panel.classList.contains('panel-hidden')) {
-        panel.classList.remove("panel-hidden");
-        panel.classList.add("panel-visible");
+  section.forEach(section => {
+    section.addEventListener('click', () => {
+
+      if (section.className == 'section section-item-active') {
+        section.classList.remove('section-item-active')
       } else {
-        panel.classList.remove("panel-visible");
-        panel.classList.add("panel-hidden");
+        removeClass();
+        section.classList.add('section-item-active');
       }
+    })
+  })
+
+  function removeClass() {
+    section.forEach(section => {
+      section.classList.remove('section-item-active');
     });
   }
+
 </script>
 
 </html>

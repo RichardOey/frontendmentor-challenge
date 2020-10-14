@@ -78,7 +78,7 @@ body {
     font-family: "Kumbh Sans", sans-serif;
     font-size: 14px;
   }
-  
+
   .card {
     padding: 5px 7px;
     width: inherit;
@@ -94,7 +94,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  
+
   .title {
     text-align: center;
   }
@@ -139,7 +139,7 @@ body {
   text-align: left;
   border: none;
   outline: none;
-  background-color: white;
+  color: rgb(48, 47, 47);
 }
 
 .accordion:hover {
@@ -163,31 +163,27 @@ body {
   color: hsl(238, 29%, 16%);
 }
 
-
-.panel-hidden {
-  background-color: white;
-  color: grey;
-  max-height: 0;
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(-.25rem);
-}
-
-.panel-visible {
-  background-color: white;
-  color: grey;
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .section {
   padding: 5px 0px;
+  margin: 2em 0;
+  overflow: hidden;
+  transition: 0.5s;
+  height: 2em;
+}
+
+.section-item-active {
+  height: 7em;
+}
+
+.panel {
+  font-size: 12px;
+  color: hsl(240, 8%, 70%);
+  margin: 1em 0;
 }
 
 .divider {
   margin-top: 15px;
-  border: 1px solid hsla(240, 19%, 13%, 0.418)
+  border: 1px solid hsla(240, 19%, 13%, 0.418);
 }
 
 .attribution {
