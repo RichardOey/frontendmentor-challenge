@@ -163,16 +163,22 @@ body {
   color: hsl(238, 29%, 16%);
 }
 
+input:checked + .question + .answer {
+    margin-top: 1.5rem;
+    max-height: 9rem;
+    visibility: visible;
+    opacity:1;
+    transform: translateY(0);
+}
+
 .panel {
-  -webkit-transition: max-height 0.2s ease-in-out;
-  -moz-transition: max-height 0.2s ease-in-out;
-  -ms-transition: max-height 0.2s ease-in-out;
-  transition: max-height 0.2s ease-out;
   background-color: white;
   color: grey;
   display: none;
+  /* visibility: visible; */
   overflow: hidden;
   font-family: "Kumbh Sans";
+  /* transform: translateY(0); */
 }
 
 .section {
