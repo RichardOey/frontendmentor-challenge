@@ -103,14 +103,21 @@ body {
   font-weight: lighter;
 }
 
-@media (min-width: 375px) and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 600px) {
   .container {
     margin: 40px 20px;
+    width:auto;
+    padding: 0px 0px;
+    align-items: center;
   }
 
   .title-page {
-    font-size: 36px;
+    font-size: 20px;
     font-weight: bolder;
+  }
+
+  .caption {
+    font-size: 15px;
   }
 
   .center {
