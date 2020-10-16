@@ -1,0 +1,25 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 5px;
+    flex: 1;
+}
+
+.column {
+    flex-grow: 1;
+}
+
+.column img{
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max-height: 250px;
+}
