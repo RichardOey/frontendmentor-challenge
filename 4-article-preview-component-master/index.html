@@ -8,13 +8,17 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Article preview component</title>
+
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
       font-size: 11px;
       text-align: center;
+      font-family: "Manrope", sans-serif;
     }
 
     .attribution a {
@@ -25,42 +29,45 @@
 
 <body>
   <div class="container">
-    <div class="card">
+    <div class="row-card card">
       <div class="column">
         <img src="./images/drawers.jpg" alt="drawers">
       </div>
-      <div class="column">
-        <div class="title">
+      <div class="column mobile-content">
+        <p class="title">
           Shift the overall look and feel by adding these wonderful
           touches to furniture in your home
-        </div>
-        <div class="caption">
-          Ever been in a room and felt like something was missing? Perhaps
-          it felt slightly bare and uninviting. I’ve got some simple tips
-          to help you make any room feel complete.
-        </div>
-        <div class="name">
-          <div class="row">
-            <div class="column">
-              <img src="./images/avatar-michelle.jpg" alt="avatar">
+        </p>
+        <p class="caption">
+          Ever been in a room and felt like something was missing?
+          Perhaps it felt slightly bare and uninviting. I’ve got some
+          simple tips to help you make any room feel complete.
+        </p>
+        <div class="row">
+          <div class="column avatar">
+            <img src="./images/avatar-michelle.jpg" alt="avatar">
+          </div>
+          <div class="column-5">
+            <div class="row name">
+              Michelle Appleton
             </div>
-            <div class="column">
-              <div class="row">
-                <div class="name">
-                  Michelle Appleton
-                </div>
-                <div class="date">
-                  28 Jun 2020
-                </div>
-              </div>
+            <div class="row date">
+              28 Jun 2020
             </div>
-            <div class="column">
-              <img src="./images/icon-share.svg" alt="icon_share">
+          </div>
+          <div class="column-2 share-button">
+            <img src="./images/icon-share.svg" alt="icon_share">
+            <div class="share-tooltip-content margin-right-5">
+              Share
+              <img src="./images/icon-facebook.svg" alt="icon_share">
+              <img src="./images/icon-twitter.svg" alt="icon_share">
+              <img src="./images/icon-pinterest.svg" alt="icon_share">
             </div>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 
 
@@ -68,7 +75,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Richard</a>.
+    Coded by <a href="https://github.com/richardoey" target="_blank">Richard</a>.
   </div>
 </body>
 
